@@ -1,0 +1,229 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #43e895;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+}
+
+.App-title {
+  font-size: 17px;
+  font-family: "Avenir Next Demi Bold";
+  color: #FFFFFF;
+}
+
+.section{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  top: 77px;
+}
+
+i {
+  border: solid #FFFFFF;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  display: inline-block;
+  margin: 20px;
+  left: 0;
+  position: absolute;
+}
+
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+@media (max-width: 768px) {
+  .details.show{
+    position: absolute;
+    left: 0px;
+    -webkit-animation: slide 0.2s forwards;
+    animation: slide 0.2s forwards;
+  }
+  
+  .listView.show {
+    position: absolute;
+    right: 0px;
+    -webkit-animation: slide 0.2s forwards;
+    animation: slide 0.2s forwards;
+  }
+  
+  @keyframes slide {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+}
+
+
+.details-header {
+  background-color: #34B379;
+  padding-top: 7px;
+  padding-left: 12px;
+  height: 60px;
+  width: 100%;
+  text-align: left;
+}
+
+.details-content {
+  padding: 15px;
+  height: 60px;
+  width: 100%;
+  text-align: left;
+}
+
+.details-header .header {
+  font-size: 16px;
+  font-family: "Avenir Next Demi Bold";
+  color: #FFFFFF;
+}
+
+.details-header .category {
+  font-size: 12px;
+  font-family: "Avenir Next Regular";
+  color: #FFFFFF;
+}
+
+.details-address{
+  margin-top: 16px;
+}
+
+.details-phone{
+  margin-top: 26px;
+}
+
+.details-twitter{
+  margin-top: 26px;
+}
+
+.list-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 180px;
+  width: 100%;
+}
+
+.listView img{
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background-position: center center;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 6px;
+  left: 12px;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+.bottom-left .header{
+  font-family: "Avenir Next Demi Bold" !important;
+  font-size: 16px;
+}
+
+.bottom-left .category{
+  font-family: "Avenir Next Regular" !important;
+  font-size: 12px; 
+  margin-top: 6px;
+}
+
+.list-group-item{
+  padding: 0;
+}
+
+.marker{ 
+  font-size: 12px; 
+  font-family: "Avenir Next Regular" !important;
+  padding: 12px; 
+  text-align: left;
+}
+
+.marker-header{
+  font-family: "Avenir Next Demi Bold" !important;
+  font-size: 16px;
+}
+
+.mapLogo{
+  right: 0;
+  background-size: 49%;
+  position: absolute;
+  height: 50px;
+  width: 70px;
+  display: inline-block;
+  margin: 13px;
+  top: 0px
+}
+
+.mapStyle{
+  height: 180px;
+}
+
+@media (min-width: 768px) {
+  .list-container {
+    height:380px;
+    width: 100%;
+  }
+  .listView{
+    width: 40%;
+    display: block !important;
+    float: left;
+    max-height: 90%;
+    overflow-y: auto;
+  }
+  .details{
+    width: 60%;
+    float: right;
+    display: block !important;
+  }
+
+  .details.hide{
+    display: none !important;
+  }
+  i{
+    display: none;
+  }
+  .mapStyle{
+    height: 300px;
+  }
+  .App-title {
+    font-size: 26px;
+  }
+
+  .details-header .header {
+    font-size: 20px;
+  }
+  
+  .details-header .category {
+    font-size: 16px;
+  }
+
+  .bottom-left .header{
+    font-size: 20px;
+  }
+  
+  .bottom-left .category{
+    font-size: 16px; 
+  }
+  .section{
+    top: 87px;
+  }
+}
+
+
+
